@@ -18,7 +18,9 @@ Check out the follwoing videos explaining this CandyShop smart contract:
 
 [3. NEAR-CandyShop: getcandyItem](https://www.loom.com/share/cff0a31b7b48449a8628fd3d1cda00cd?sharedAppSource=personal_library)
 
-[]()
+[4. NEAR-CandyShop: deleteCandyItem](https://www.loom.com/share/49a7a736bd6b42898294c71371c5a20a?sharedAppSource=personal_library)
+
+[5. NEAR-CandyShop: getCandyShop](https://www.loom.com/share/978d8e321bfc42a9a571c3371f16a8a7?sharedAppSource=personal_library)
 
 The example here is very basic.  It's a simple contract demonstrating the following concepts:
 - a single contract
@@ -79,4 +81,4 @@ scripts
 └── README.md                     <-- instructions
 ```
 ## Deployed Contract Link
-[Check out the deployed Smart Contract on explorer.testnet.near.org](https://explorer.testnet.near.org/transactions/5t71bH7AtKsrKNfWan3J3uhaVi5FjMtxLM3CKNFq9pKM)
+[Check out the deployed Smart Contract on explorer.testnet.near.org](https://explorer.testnet.near.org/transactions/GUP4qaUYk555nJqkUsvqudMz4FLTqMArwCu59d2tMbYY)
