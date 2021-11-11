@@ -8,9 +8,9 @@
     "test:unit": "yarn asp -f unit.spec",
     "build": "asb --target debug",
     "build:release": "asb",
-    "test": "yarn build:release && yarn test:unit && yarn test:simulate",
-    "test:simulate": "cargo test -- --nocapture",
-    "clean": "rm -rf ./build && rm -rf ./neardev && rm -rf ./target"
+    "test": "yarn build:release && yarn test:unit",
+    "clean": "rm -rf ./build && rm -rf ./neardev && rm -rf ./target",
+    "deploy": "./scripts/1.deploy.sh"
   },
   "keywords": [],
   "author": "hello@near.org",

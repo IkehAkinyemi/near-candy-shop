@@ -5,12 +5,12 @@ import { AccountId, supplyID } from "../../utils";
 export class Candy {
   uniqueId: supplyID;
   name: string;
-  supply: u32;
+  supply: u64;
   supplier: AccountId;
 
   constructor(
     name: string,
-    supply: u32,
+    supply: u64,
     supplier: string,
     uniqueId: supplyID
   ) {
@@ -22,6 +22,6 @@ export class Candy {
 }
 
 export const candyShop = new PersistentMap<supplyID, Candy>("s");
-export const suppliers = new PersistentVector<string>("su");
+export const suppliers = new PersistentVector<AccountId>("su");
 export const candyIds = new PersistentVector<string>("gids");
 

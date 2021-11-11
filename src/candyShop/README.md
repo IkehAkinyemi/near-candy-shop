@@ -5,60 +5,27 @@
 ### Interface
 
 ```ts
-export function showYouKnow(): void;
+function updateCandyShop
 ```
-
-- "View" function (ie. a function that does NOT alter contract state)
-- Takes no parameters
-- Returns nothing
-
-```ts
-export function showYouKnow2(): bool;
-```
-
-- "View" function (ie. a function that does NOT alter contract state)
-- Takes no parameters
-- Returns true
-
-```ts
-export function sayHello(): string;
-```
-
-- "View" function
-- Takes no parameters
-- Returns a string
-
-```ts
-export function sayMyName(): string;
-```
-
-- "Change" function (although it does NOT alter state, it DOES read from `context`, [see docs for details](https://docs.near.org/docs/develop/contracts/as/intro))
-- Takes no parameters
-- Returns a string
-
-```ts
-export function saveMyName(): void;
-```
-
 - "Change" function (ie. a function that alters contract state)
-- Takes no parameters
-- Saves the sender account name to contract state
-- Returns nothing
+- Updates the candyShop with a new Candy supply and returns the successful message
 
 ```ts
-export function saveMyMessage(message: string): bool;
+function deleteCandyItem
 ```
-
-- "Change" function
-- Takes a single parameter message of type string
-- Saves the sender account name and message to contract state
-- Returns nothing
+- "Change" function (ie. a function that alters contract state)
+- Recieves a candy's uniqueId as parameter
+- This grabs the candy supply with the uniqueId parameter and deletes it.
 
 ```ts
-export function getAllMessages(): Array<string>;
+function getcandyItem
 ```
+- "View" function (ie. a function that does not alters contract state)
+- Recieves a candy's unique id as parameter
+- Returns a Candy object from the candyShop 
 
-- "Change" function
-- Takes no parameters
-- Reads all recorded messages from contract state (this can become expensive!)
-- Returns an array of messages if any are found, otherwise empty array
+```ts
+function getCandyShop
+```
+- "View" function (ie. a function that does not alters contract state)
+- Returns the whole candyShop details/content

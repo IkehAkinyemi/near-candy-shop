@@ -34,13 +34,13 @@ It uses the following setup:
 
   # for example
   # export CONTRACT=dev-1615190770786-2702449
-  # export OWNER=sherif.testnet
+  # export OWNER=ikeh_akinyemi.testnet
   ```
 
 - Commands
   ```sh
-  1.init.sh               # cleanup, compile and deploy contract
-  2.run.sh                # call methods on the deployed contract
+  1.deploy.sh               # cleanup, compile and deploy contract
+  2.update_candy_shop.sh                # call methods on the deployed contract
   ```
 
 ### Terminal **B**
