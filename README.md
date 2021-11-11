@@ -22,6 +22,8 @@ Check out the follwoing videos explaining this CandyShop smart contract:
 
 [5. NEAR-CandyShop: getCandyShop](https://www.loom.com/share/978d8e321bfc42a9a571c3371f16a8a7?sharedAppSource=personal_library)
 
+[6. NEAR-CandyShop: Wrap-Up!](https://www.loom.com/share/7500b495c4d645be8ec0af84f24a7890?sharedAppSource=personal_library)
+
 The example here is very basic.  It's a simple contract demonstrating the following concepts:
 - a single contract
 - the difference between `view` vs. `change` methods
