@@ -38,19 +38,18 @@ describe("Grab an item from the candyShop", () => {
   beforeEach(() => {
     VMContext.setAttached_deposit(TxFee);
     VMContext.setSigner_account_id(shopOwner);
+
+    const name = "MilkyWay";
+    updateCandyShop(name, 200);
   });
 
   it("Returns an existing candy from the candyShop", () => {
-    const name = "MilkyWay";
-    updateCandyShop(name, 200);
     const candy = getcandyItem(candyIds[0]);
 
     expect(candy.uniqueId).toStrictEqual(candyIds[0], "The uniqueId on the returned candy is equal to the id: " + candyIds[0])
   });
 
   it("Smart contract panics when there's no candy with such ID", () => {
-    const name = "MilkyWay";
-    updateCandyShop(name, 200);
     function getUnknownItem(): void {
       getcandyItem("CS-0000001");
     }
@@ -62,18 +61,17 @@ describe("Delete a supplied candy from the candyShop", () => {
   beforeEach(() => {
     VMContext.setAttached_deposit(TxFee);
     VMContext.setSigner_account_id(shopOwner);
+
+    const name = "MilkyWay";
+    updateCandyShop(name, 200);
   });
 
   it("Deletes an item from the candyShop, and returns a response", () => {
-    const name = "MilkyWay";
-    updateCandyShop(name, 200);
     const response = deleteCandyItem(candyIds[0]);
     expect(response).toBe("The Candy item with " + candyIds[0] + " has been deleted from the CandyShop")
   })
 
   it("Smart contract panics when there's no candy with such ID", () => {
-    const name = "MilkyWay";
-    updateCandyShop(name, 200);
     function daleteUnknownItem(): void {
       deleteCandyItem("CS-0000001");
     }
