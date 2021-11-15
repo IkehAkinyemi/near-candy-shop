@@ -13,7 +13,7 @@
     "deploy": "./scripts/1.deploy.sh"
   },
   "keywords": [],
-  "author": "hello@near.org",
+  "author": "ikehakinyemi.near",
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
